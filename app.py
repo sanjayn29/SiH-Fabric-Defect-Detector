@@ -94,7 +94,7 @@ def save_defect(defect_name, confidence, image_path):
 
 # ====================== CAMERA STREAM ======================
 def generate_frames():
-    cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+    cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
     if not cap.isOpened():
         cap = cv2.VideoCapture(0)
     if not cap.isOpened():
